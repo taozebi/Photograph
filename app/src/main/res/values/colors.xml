@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--#303F9F-->
+    <color name="colorPrimary">#3F51B5</color>
+    <!--<color name="colorPrimaryDark">#037BFF</color>-->
+    <!--<color name="colorPrimaryDark">#1C86EE</color>-->
+    <color name="colorPrimaryDark">#1B82D1</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+
+    <color name="red">#FF0000</color>
+    <color name="blue">#33B5E5</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#ABADB3</color>
+    <color name="grayWhite">#ebebeb</color>
+    <color name="grayLight">#887c7c7c</color>
+    <color name="grayDark">#5E5E5E</color>
+    <color name="lightBlack">#515151</color>
+    <color name="listDivider">#D3D3D3</color>
+    <color name="transparent">#00000000</color>
+    <color name="trans_black">#1000</color>
+
+
+    <!--  <color name="titleBarBackground">#5787b7</color>-->
+    <!--<color name="titleBarBackground">#4d8aef</color>-->
+    <color name="titleBarBackground">@color/colorPrimaryDark</color>
+    <color name="textColor">#4b4b4b</color>
+    <color name="textColorHint">#887c7c7c</color>
+
+    <color name="toolBarText_P">#707070</color>
+    <color name="toolBarText_N">#8F8F8F</color>
+    <color name="toolBarText_C">#417CAB</color>
+    <color name="toolBarLine">#EEEEF0</color>
+    <color name="toolBarBG">#FAFBFF</color>
+
+    <color name="rbTextColorYellow_C">#efba00</color>
+    <color name="rbTextColorYellow_N">#ffdd65</color>
+    <color name="rbTextColorGreen_C">#009478</color>
+    <color name="rbTextColorGreen_N">#2db59b</color>
+
+
+    <!--<color name="childTitleBgColor">#e2e2e2</color>-->
+    <color name="childTitleBackground">#f0f4f7</color>
+    <color name="childTitleTextColor">@color/lightBlack</color>
+
+    <color name="adapterTextColorTime">#cacaca</color>
+    <color name="titleTextColor">#515151</color>
+    <color name="contentTextColorBlue">#4d8aef</color>
+    <color name="contentTextColorRed">#e23131</color>
+    <color name="contentTextColor">#a3a3a3</color>
+    <!--<color name="lineColor">#e6e6e6</color>-->
+    <color name="lineColor">#EEEEEE</color>
+    <color name="buttonColor_N">#4c8aef</color>
+    <color name="buttonColor_P">#6ba3ff</color>
+
+    <color name="mainGray">#F5F5F5</color>
+
+    <color name="light_blue_2">#73C6F8</color>
+
+    <color name="softkey01">#6673C6F8</color>
+    <color name="softkey02">#661C86EE</color>
+</resources>

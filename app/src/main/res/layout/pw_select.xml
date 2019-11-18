@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_pw"
+        android:padding="@dimen/marginMiddle">
+
+        <LinearLayout
+            android:id="@+id/mPwTitleLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/marginMiddle">
+
+                <LinearLayout style="@style/childTitleLayout">
+
+                    <ImageView style="@style/childTitleImage" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        style="@style/childTitleText"
+                        android:text="@string/chaobiao_pw_title"
+                        android:textColor="@color/toolBarText_C" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/lineStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mPwBtnLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <View style="@style/lineStyle" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall">
+
+                <Button
+                    android:id="@+id/mCbBkCancelBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_corner_bk_cancel"
+                    android:minHeight="3dp"
+                    android:text="取消"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/marginLarge" />
+
+                <Button
+                    android:id="@+id/mCbBkConfitmBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_corner_bk_confirm"
+                    android:minHeight="3dp"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/marginLarge" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/mPwBtnLl"
+            android:layout_below="@id/mPwTitleLl"
+            android:orientation="vertical">
+
+            <GridView
+                android:id="@+id/gv_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawSelectorOnTop="true"
+                android:listSelector="@drawable/bg_trans_transblack"
+                android:numColumns="2" />
+
+            <View style="@style/lineStyle" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

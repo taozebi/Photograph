@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainGray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginMiddle"
+        android:layout_marginRight="@dimen/marginMiddle"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/marginSmall">
+
+            <TextView
+                style="@style/chaobiaoContentText"
+                android:layout_gravity="center_vertical"
+                android:text="项目名称:" />
+
+            <EditText
+                android:id="@+id/mProjectNameEt"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/shape_corner_edittext"
+                android:gravity="left|center_vertical"
+                android:hint="输入项目名称"
+                android:paddingLeft="@dimen/marginLarge"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/textSizeMiddle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/marginSmall">
+
+            <TextView
+                style="@style/chaobiaoContentText"
+                android:layout_gravity="center_vertical"
+                android:text="项目路径:" />
+
+            <RelativeLayout
+                android:id="@+id/mNewProjectPathLl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/shape_corner_edittext"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/mFdTypeIv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_jicha_arraw" />
+
+                <TextView
+                    android:id="@+id/mNewProjectPathTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="@dimen/marginSmall"
+                    android:layout_marginTop="3dp"
+                    android:layout_toLeftOf="@+id/mFdTypeIv"
+                    android:gravity="left|center_vertical"
+                    android:hint="选择项目路径"
+                    android:paddingLeft="@dimen/marginLarge"
+                    android:textColor="@color/titleTextColor"
+                    android:textSize="@dimen/textSizeMiddle" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/mNewProjectBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginLarge"
+            android:background="@drawable/button_style"
+            android:padding="@dimen/marginSmall"
+            android:minHeight="@dimen/titleBarHeight"
+            android:gravity="center"
+            android:text="创  建"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_18" />
+    </LinearLayout>
+</LinearLayout>

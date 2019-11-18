@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/marginMiddle">
+
+        <ImageView
+            android:id="@+id/mProjectItemIconIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/marginSmall"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_table_book" />
+
+
+        <LinearLayout
+            android:id="@+id/mProjectItemCountLL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/marginSmall"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/mProjectItemCountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="@color/contentTextColorBlue"
+                android:textSize="@dimen/textSizeMiddle"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mProjectItemTimeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019-11-17"
+                android:textColor="@color/contentTextColor"
+                android:textSize="@dimen/textSizeMiddle" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/mProjectItemLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/mProjectItemCountLL"
+            android:layout_toRightOf="@id/mProjectItemIconIv"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/marginLarge">
+
+            <TextView
+                android:id="@+id/mProjectItemNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="项目名称"
+                android:textColor="@color/titleTextColor"
+                android:textSize="@dimen/textSizeLarge"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/mProjectItemDescTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginSmall"
+                android:text="剩余25户未抄"
+                android:textColor="@color/contentTextColor"
+                android:textSize="@dimen/textSizeMiddle" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/lineStyle" />
+</LinearLayout>

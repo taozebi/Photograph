@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_corner_dialog"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/marginSmall">
+
+        <ImageView
+            android:id="@+id/mDialogTitleIv"
+            style="@style/childTitleImage"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:id="@+id/mDialogTitle"
+            style="@style/childTitleText"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/mDialogTitleIv"
+            android:text="@string/chaobiao_cbmemo"
+            android:textColor="@color/titleTextColor"
+            android:textSize="@dimen/titleBarTextSize" />
+    </RelativeLayout>
+
+    <View style="@style/lineStyle" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginMiddle"
+        android:layout_marginBottom="@dimen/marginMiddle"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/mDialogMsgEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner_edittext"
+            android:hint="输入备注信息"
+            android:textColor="@color/textColor"
+            android:padding="@dimen/marginMiddle"
+            android:textSize="@dimen/marginLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_weight="0"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/mDialogCancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner"
+            android:minHeight="3dp"
+            android:text="取消"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/marginLarge" />
+
+        <Button
+            android:id="@+id/mDialogSubmitBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corner"
+            android:minHeight="3dp"
+            android:text="确定"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/marginLarge" />
+    </LinearLayout>
+</LinearLayout>

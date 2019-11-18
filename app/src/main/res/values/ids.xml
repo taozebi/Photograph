@@ -1,0 +1,6 @@
+<resources>
+    <item name="checkAll" type="id" />
+    <item name="glideId" type="id" />
+
+    <item type="id" name="drag_handle" />
+</resources>

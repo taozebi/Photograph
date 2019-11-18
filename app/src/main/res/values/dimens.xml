@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="marginLarge">15dp</dimen>
+    <dimen name="marginMiddle">10dp</dimen>
+    <dimen name="marginSmall">5dp</dimen>
+    <!--SearchView Margin-->
+
+    <dimen name="titleBarTextSize">@dimen/sp_20</dimen>
+    <dimen name="titleBarButtonTextSize">@dimen/sp_16</dimen>
+
+    <dimen name="titleBarPadding_V">2dp</dimen>
+    <dimen name="titleBarPadding_H">0dp</dimen>
+    <dimen name="titleBarHeight">40dp</dimen>
+
+    <dimen name="textSizeLarge">16sp</dimen>
+    <dimen name="textSizeMiddle">14sp</dimen>
+    <dimen name="textSizeSmall">12sp</dimen>
+
+    <dimen name="lineHeight">2px</dimen>
+
+    <dimen name="pie_chart_double_text_size">16dp</dimen>
+
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="sp_20">20sp</dimen>
+    <dimen name="sp_26">26sp</dimen>
+</resources>

@@ -1,0 +1,372 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <!-- 欢迎页背景引用刚才写好的 -->
+        <item name="android:windowBackground">@drawable/splash</item>
+        <item name="android:windowFullscreen">true</item>
+        <!-- <item name="android:windowIsTranslucent">true</item> --> <!-- 透明背景不要了 -->
+    </style>
+
+    <!-- 自定义仿IOS的AlertDialog的样式 -->
+    <style name="AlertDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <!-- 自定义仿IOS的ActionSheet底部Dialog的样式 ，有模糊效果 -->
+    <style name="ActionSheetDialogStyle" parent="@android:style/Theme.Dialog">
+
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 浮于Activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- Dialog以外的区域模糊效果 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/ActionSheetDialogAnimation</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_dialog_in</item>
+        <item name="android:windowExitAnimation">@anim/actionsheet_dialog_out</item>
+    </style>
+
+    <style name="Bubble.TextAppearance.Dark" parent="android:TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+    </style>
+
+    <style name="Bubble.TextAppearance.Light" parent="Bubble.TextAppearance.Dark">
+        <item name="android:textColor">#ffeeeeee</item>
+    </style>
+
+    <style name="ClusterIcon.TextAppearance" parent="android:TextAppearance">
+        <item name="android:textColor">#ffeeeeee</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="inputEditTextStyleHorizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/contentTextColorBlue</item>
+        <!--<item name="android:textColor">@color/textColor</item>-->
+        <item name="android:textSize">@dimen/textSizeMiddle</item>
+        <item name="android:padding">@dimen/marginMiddle</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="inputTextViewStyleHorizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/titleTextColor</item>
+        <item name="android:textSize">@dimen/textSizeMiddle</item>
+        <item name="android:padding">@dimen/marginMiddle</item>
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:background">@null</item>
+    </style>
+    <style name="lineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/lineHeight</item>
+        <item name="android:background">@color/lineColor</item>
+    </style>
+
+    <!--表册列表-->
+    <style name="childTitleLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/marginMiddle</item>
+        <item name="android:paddingRight">@dimen/marginMiddle</item>
+        <item name="android:paddingTop">@dimen/marginSmall</item>
+        <item name="android:paddingBottom">@dimen/marginSmall</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="childTitleImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:layout_marginLeft">@dimen/marginSmall</item>-->
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@drawable/icon_title_header</item>
+        <item name="android:tint">@color/colorPrimaryDark</item>
+    </style>
+    <style name="childTitleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/marginMiddle</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/childTitleTextColor</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="biaocdFuncLayout">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_trans_transblack</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="biaocdFuncImage">
+        <item name="android:layout_width">40dip</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:src">@mipmap/ic_launcher</item>
+    </style>
+    <style name="biaocdFuncText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+    </style>
+
+    <style name="lineView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2px</item>
+        <item name="android:background">@color/lineColor</item>
+    </style>
+
+    <!--抄表列表-->
+    <style name="chaobiaoListIndexTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:paddingBottom">@dimen/titleBarPadding_V</item>
+
+    </style>
+    <style name="chaobiaoListIndexValue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="chaobiaoListChangeLayout">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@drawable/bg_trans_transblack</item>
+    </style>
+
+    <style name="st_chaobiaolist_blueline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+    <!--抄表明细-->
+    <style name="chaobiaoTitleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:layout_marginRight">@dimen/marginLarge</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="chaobiaoLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">@dimen/marginLarge</item>
+        <item name="android:paddingTop">@dimen/marginSmall</item>
+        <item name="android:paddingBottom">@dimen/marginSmall</item>
+    </style>
+    <style name="chaobiaoContentLayout">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="chaobiaoContentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/grayDark</item>
+        <item name="android:textSize">@dimen/sp_16</item>
+        <item name="android:layout_marginRight">@dimen/marginLarge</item>
+<!--        <item name="android:layout_alignParentRight">true</item>-->
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="chaobiaoFuncLayout">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="chaobiaoFuncText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/toolBarText_C</item>
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+        <item name="android:layout_margin">3dp</item>
+    </style>
+    <style name="st_bt_softkey">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/mainGray</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/titleTextColor</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="st_bt_softkey_text">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@color/mainGray</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:textColor">@color/titleTextColor</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="st_bt_softkey_vertical">
+        <item name="android:layout_height">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">3dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/bg_softkey</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">#ffff</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+
+    <!--我的-->
+    <style name="st_mine_ll">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="st_mine_iv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--<item name="android:layout_marginLeft">@dimen/marginSmall</item>-->
+        <!--<item name="android:tint">@color/blue</item>-->
+    </style>
+
+    <style name="st_mine_tv_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/grayDark</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+    </style>
+    <style name="st_mine_tv_memo">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+    <style name="st_mine_iv_right_arrow">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:tint">@color/grayLight</item>
+        <item name="android:src">@drawable/icon_open_c</item>
+    </style>
+    <style name="st_mine_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/grayWhite</item>
+        <item name="android:layout_height">0.5dp</item>
+    </style>
+
+    <style name="st_line">
+        <item name="android:background">#eee</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="st_ll_zhcx_01">
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="st_ll_zhcx">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="st_tv_zhcx_01">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#666</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_width">80dp</item>
+    </style>
+
+    <style name="cb_rb_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_margin">@dimen/marginSmall</item>
+        <item name="android:paddingTop">@dimen/marginSmall</item>
+        <item name="android:paddingBottom">@dimen/marginSmall</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/textSizeLarge</item>
+        <item name="android:drawablePadding">@dimen/marginSmall</item>
+    </style>
+
+</resources>

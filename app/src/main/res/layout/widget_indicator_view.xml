@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/marginMiddle">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/marginMiddle"
+        android:paddingBottom="@dimen/marginMiddle"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/mWgIndicatorLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/childTitleBackground">
+            <TextView
+                android:id="@+id/mWgIndicatorTitleTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLarge"
+                android:textColor="@color/childTitleTextColor"
+                android:textSize="@dimen/textSizeLarge"
+                android:gravity="left|center_vertical"/>
+        </LinearLayout>
+        <com.ewide.photograph.common.view.RoundIndicatorView
+            android:id="@+id/mWgIndicatorView"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_below="@id/mWgIndicatorLl"
+            android:padding="@dimen/marginLarge"/>
+    </RelativeLayout>
+</RelativeLayout>

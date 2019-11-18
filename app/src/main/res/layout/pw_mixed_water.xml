@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_pw"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/marginMiddle"
+        android:paddingLeft="@dimen/marginMiddle"
+        android:paddingRight="@dimen/marginMiddle">
+
+        <LinearLayout
+            android:id="@+id/mPwTitleLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="@dimen/marginMiddle">
+
+                <LinearLayout style="@style/childTitleLayout">
+
+                    <ImageView style="@style/childTitleImage" />
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        style="@style/childTitleText"
+                        android:text="@string/chaobiao_pw_mixed_water"
+                        android:textColor="@color/toolBarText_C" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mPwBtnLl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <View style="@style/lineStyle" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/marginSmall"
+                android:paddingTop="@dimen/marginSmall">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="用水性质编号"
+                    android:textColor="@color/titleTextColor"
+                    android:textSize="@dimen/textSizeLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="用水性质名称"
+                    android:textColor="@color/titleTextColor"
+                    android:textSize="@dimen/textSizeLarge"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="水量"
+                    android:textColor="@color/titleTextColor"
+                    android:textSize="@dimen/textSizeLarge"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <View style="@style/lineStyle" />
+
+            <ListView
+                android:id="@+id/mMixedWaterLv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@drawable/bg_trans_transblack" />
+            <View style="@style/lineStyle" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_weight="0"
+                android:orientation="horizontal"
+                android:padding="@dimen/marginSmall">
+
+                <Button
+                    android:id="@+id/mCbBkCancelBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_corner_bk_cancel"
+                    android:minHeight="3dp"
+                    android:text="取消"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/marginLarge" />
+
+                <Button
+                    android:id="@+id/mCbBkConfitmBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_corner_bk_confirm"
+                    android:minHeight="3dp"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/marginLarge" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:orientation="vertical" android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+    <!--</LinearLayout>-->

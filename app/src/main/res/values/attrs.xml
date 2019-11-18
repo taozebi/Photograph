@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--仪表盘-->
+    <declare-styleable name="RoundIndicatorView">
+        <!--最大数值-->
+        <attr name="maxNum" format="integer"/>
+        <!--圆盘起始角度-->
+        <attr name="startAngle" format="integer"/>
+        <!--圆盘扫过的角度-->
+        <attr name="sweepAngle" format="integer"/>
+    </declare-styleable>
+
+    <!--站点类型定义-->
+    <!--   查询条件(ciid/miname/miaddr/cimtel/miid/cinnecttel/mdno/bfid/simplename)
+    (用户编号/用户名称/用户地址/用户电话/水表编号/联系电话/表身码/表册号/名称拼音缩写)-->
+    <string-array name="queryTypes">
+        <item>用户编号</item>
+        <item>用户名称</item>
+        <item>用户地址</item>
+        <item>移动电话</item>
+        <item>联系电话</item>
+        <item>表册编号</item>
+        <item>水表编号</item>
+        <item>表身码</item>
+        <item>用户简称</item>
+    </string-array>
+    <string-array name="queryTypes_xiangcheng">
+        <item>用户编号</item>
+        <item>用户名称</item>
+        <item>用户地址</item>
+        <item>移动电话</item>
+        <item>短信号码</item>
+        <item>表册编号</item>
+        <item>远传表号</item>
+        <item>表身码</item>
+        <item>用户简称</item>
+    </string-array>
+
+
+    <!--站点类型定义-->
+    <!--    1:厂站，2:管网，3:井群，4:泵房-->
+
+    <!--水源类型定义  地下水为0,地表水为2-->
+
+    <!--站点实时检测数据表头key-->
+
+    <!--站点实时检测数据表头显示-->
+
+    <string-array name="target_labels">
+        <item>低效</item>
+        <item>不足</item>
+        <item>正常</item>
+        <item>高效</item>
+        <item>负荷</item>
+    </string-array>
+
+    <!--ViewPager指示器-->
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension"/>
+        <attr name="ci_height" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_animator" format="reference"/>
+        <attr name="ci_animator_reverse" format="reference"/>
+        <attr name="ci_drawable" format="reference"/>
+        <attr name="ci_drawable_unselected" format="reference"/>
+
+        <attr name="ci_orientation" format="enum">
+            <!-- Defines an horizontal widget. -->
+            <enum name="horizontal" value="0"/>
+            <!-- Defines a vertical widget. -->
+            <enum name="vertical" value="1"/>
+        </attr>
+
+        <attr name="ci_gravity">
+            <!-- Push object to the top of its container, not changing its size. -->
+            <flag name="top" value="0x30"/>
+            <!-- Push object to the bottom of its container, not changing its size. -->
+            <flag name="bottom" value="0x50"/>
+            <!-- Push object to the left of its container, not changing its size. -->
+            <flag name="left" value="0x03"/>
+            <!-- Push object to the right of its container, not changing its size. -->
+            <flag name="right" value="0x05"/>
+            <!-- Place object in the vertical center of its container, not changing its size. -->
+            <flag name="center_vertical" value="0x10"/>
+            <!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill_vertical" value="0x70"/>
+            <!-- Place object in the horizontal center of its container, not changing its size. -->
+            <flag name="center_horizontal" value="0x01"/>
+            <!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+            <flag name="fill_horizontal" value="0x07"/>
+            <!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+            <flag name="center" value="0x11"/>
+            <!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+            <flag name="fill" value="0x77"/>
+            <!-- Additional option that can be set to have the top and/or bottom edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the vertical gravity: a top gravity will clip the bottom
+            edge, a bottom gravity will clip the top edge, and neither will clip both edges. -->
+            <flag name="clip_vertical" value="0x80"/>
+            <!-- Additional option that can be set to have the left and/or right edges of
+            the child clipped to its container's bounds.
+            The clip will be based on the horizontal gravity: a left gravity will clip the right
+            edge, a right gravity will clip the left edge, and neither will clip both edges. -->
+            <flag name="clip_horizontal" value="0x08"/>
+            <!-- Push object to the beginning of its container, not changing its size. -->
+            <flag name="start" value="0x00800003"/>
+            <!-- Push object to the end of its container, not changing its size. -->
+            <flag name="end" value="0x00800005"/>
+        </attr>
+
+    </declare-styleable>
+</resources>

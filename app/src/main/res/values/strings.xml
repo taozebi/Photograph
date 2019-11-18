@@ -1,0 +1,185 @@
+<resources>
+    <string name="app_name">PhotoGraph</string>
+    <!--<string name="app_name">云锡供水</string>-->
+    <string name="company">武汉易维科技股份有限公司</string>
+    <string name="rights">易维科技$$易维云</string>
+    <string name="copyright">Copyright @ 2018 Ewide-Technology Co.,ltd</string>
+
+    <string name="account">账号</string>
+    <string name="password">密码</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="chaobiao">抄表</string>
+    <string name="bookmark">书签</string>
+    <string name="query">查询</string>
+    <string name="setting">设置</string>
+    <string name="mine">我的</string>
+    <string name="login">登录</string>
+    <string name="save">保存</string>
+    <string name="check_update">检测更新</string>
+
+    <!--我的-->
+    <string name="mine_about">关于</string>
+
+    <!--蓝牙管理-->
+    <string name="bluetooth">蓝牙</string>
+    <string name="bluetooth_manage">蓝牙管理</string>
+    <string name="my_device">我的设备</string>
+    <string name="other_device">其他设备</string>
+    <string name="disconnect">断开</string>
+    <string name="connected">已连接</string>u
+    <string name="unconnected">未连接</string>
+    <string name="off">关</string>
+    <string name="on">开</string>
+
+    <string name="produce">产能</string>
+    <string name="water_unit">km³</string>
+    <string name="tip">提示</string>
+    <string name="loading"  translatable="false">加载中...</string>
+
+    <string name="tip_latest_version">当前已是最新版本</string>
+
+    <!--图表相关-->
+    <string name="reset">重置</string>
+    <string name="add_line">添加线条</string>
+    <string name="show_hide_node">显示/隐藏节点</string>
+    <string name="show_hide_node_target">显示/隐藏节点标签</string>
+    <string name="curve_broken_line">曲线/折线</string>
+    <string name="full_area_color">填充下方区域颜色</string>
+    <string name="switch_anima">切换动画</string>
+    <string name="click_node_show_target">点击节点显示标签</string>
+    <string name="dynamic_data_display">动态数据显示</string>
+
+    <!--首页地图-->
+    <string name="list_empty">暂无列表数据</string>
+
+    <!--站点-->
+    <!--基本信息-->
+    <string name="preview">预览</string>
+    <!--设备信息-->
+    <!--实时检测数据-->
+
+
+    <string name="target_prodect_hour">实时产能指标</string>
+
+    <!--水质报告-->
+    <!--检验检测报告-->
+
+    <!--报警-->
+    <string name="tip_permission_granted_failed">授权失败</string>
+    <string name="tip_permission_grant_first">请授权</string>
+
+    <string name="user_logining">正在登录...</string>
+
+    <!--设置-->
+    <string name="server_url">服务器地址</string>
+    <string name="url">服务地址</string>
+    <string name="port">端口号</string>
+    <string name="tip_setting_server_url_null">服务地址为空</string>
+    <string name="tip_setting_server_port_null">端口号为空</string>
+    <string name="tip_need_restart">修改了服务器地址,需要重启App生效</string>
+    <string name="tip_need_update">检测到新版本,是否升级?</string>
+    <string name="update_next_time">下次再说</string>
+    <string name="update_now_time">马上更新</string>
+
+    <!--个人信息-->
+    <string name="user_info">个人信息</string>
+    <string name="user_head_portrait">个人头像</string>
+    <string name="head_portrait">头像</string>
+    <string name="realname">姓名</string>
+    <string name="worknumber">工号</string>
+    <string name="phone">电话</string>
+    <string name="exitlogin">退出登录</string>
+
+
+    <string name="mine_data_download">数据下载</string>
+    <string name="mine_data_statistics">数据统计</string>
+    <string name="mine_data_guiji">轨迹回放</string>
+    <string name="mine_data_backup">数据备份</string>
+    <string name="mine_data_reduction">数据还原</string>
+    <string name="cleardata">清空本地数据</string>
+
+    <!-- 文件选择 -->
+    <string name="file_path">文件目录</string>
+    <string name="back_previous">返回上一层</string>
+
+    <!--表册列表-->
+    <string name="biaoce_current_progress">当前进度</string>
+    <string name="biaoce_my_task">我的任务</string>
+    <string name="biaoce_name">表册名称</string>
+    <string name="biaoce_addr">用户地址</string>
+    <string name="biaoce_func_cb">抄表</string>
+    <string name="report">举报</string>
+    <string name="musenum">水量</string>
+
+    <!--符合列表-->
+
+    <!--抄表列表-->
+    <string name="chaobiao_list_search_hint">请输入户号、户名、地址搜索</string>
+    <string name="chaobiao_list_index_total">册内总数</string>
+    <string name="chaobiao_list_index_yc">已抄数</string>
+    <string name="chaobiao_list_index_complete">完成数</string>
+    <string name="chaobiao_list_index_wc">待抄数</string>
+    <string name="chaobiao_list_index_percent">完成度</string>
+    <string name="chaobiao_list_biaoce">表册编号 9527</string>
+    <string name="chaobiao_list_change_wc">待抄</string>
+    <string name="chaobiao_list_change_yc">已抄</string>
+    <string name="chaobiao_list_change_bk">表况</string>
+    <string name="chaobiao_list_change_order">顺序</string>
+    <string name="chaobiao_list_change_complete">完成</string>
+    <string name="upload">上传</string>
+    <string name="checkAll">全选</string>
+
+    <string name="sort_num">表册号</string>
+    <string name="sort_time">抄表时间</string>
+    <string name="filter">筛选</string>
+
+    <!--抄表详情-->
+    <string name="chaobiao_name_title">户名:</string>
+    <string name="chaobiao_id_title">户号:</string>
+    <string name="chaobiao_id_bsm">表身码:</string>
+    <string name="chaobiao_addr_title">用户地址:</string>
+    <string name="chaobiao_name">韩梅梅</string>
+    <string name="chaobiao_id">1234567891</string>
+    <string name="chaobiao_bsm">107718</string>
+    <string name="chaobiao_addr">新区武大航域二区A1栋1层103室</string>
+    <string name="chaobiao_custinfo">用户信息</string>
+    <string name="chaobiao_meterinfo">水表信息</string>
+    <string name="chaobiao_picinfo">现场|照片</string>
+    <string name="chaobiao_cimemo">用户备注</string>
+    <string name="chaobiao_cbmemo">抄表备注</string>
+    <string name="chaobiao_cimtel">移动电话:</string>
+    <string name="chaobiao_sms">短信号码:</string>
+    <string name="chaobiao_pfid">用水性质:</string>
+    <string name="chaobiao_saving">账户余额:</string>
+    <string name="chaobiao_qfje">历史欠费:</string>
+    <string name="chaobiao_bfid">所属表册:</string>
+
+    <string name="chaobiao_user_abbreviation">用户简称:</string>
+    <string name="chaobiao_rorder">抄表次序:</string>
+    <string name="chaobiao_metertype">水表类型:</string>
+    <string name="chaobiao_caliber">水表口径:</string>
+    <string name="chaobiao_lastreaddate">上期抄表:</string>
+    <string name="chaobiao_lastsl">上期水量:</string>
+    <string name="chaobiao_scode">上期止码:</string>
+    <string name="chaobiao_mrthreesl">三月均量:</string>
+    <string name="chaobiao_breach_money">违约金:</string>
+    <string name="chaobiao_account_money">本期金额:</string>
+    <string name="chaobiao_bk_now">本期表况:</string>
+    <string name="chaobiao_nowsl">本期水量:</string>
+    <string name="chaobiao_code_now">本期止码:</string>
+    <string name="chaobiao_cb">抄表</string>
+    <string name="chaobiao_bk">表况</string>
+    <string name="chaobiao_pre">上一户</string>
+    <string name="chaobiao_next">下一户</string>
+    <string name="chaobiao_pw_title">无法正常抄见,请选择表况</string>
+    <string name="chaobiao_pw_mixed_water">混合用水信息</string>
+
+    <string name="chaobiao_user_status">用户状态:</string>
+    <string name="chaobiao_meter_position">表位:</string>
+
+    <string name="tips_func_not_open">功能暂未开放</string>
+    <!--<string name="tips_chaobiao_no_photo">表况异常或口径大于25，请先对现场情况进行拍照，并至少上传一张图片</string>-->
+    <string name="tips_chaobiao_error_caliber">口径大于25，请先对现场情况进行拍照</string>
+    <string name="tips_cb_error_bk">表况异常，请先对现场情况进行拍照</string>
+</resources>

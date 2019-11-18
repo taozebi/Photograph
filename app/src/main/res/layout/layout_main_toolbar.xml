@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="@color/toolBarBG"
+    android:orientation="vertical">
+
+    <View android:layout_width="match_parent"
+        android:layout_height="@dimen/lineHeight"
+        android:background="@color/toolBarLine"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/marginSmall"
+        android:paddingBottom="@dimen/marginSmall"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mMenuMeterReadRb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_read_style"
+            android:gravity="center"
+            android:text="@string/chaobiao"
+            android:textColor="@drawable/btn_read_style"
+            android:textSize="@dimen/textSizeSmall" />
+
+        <RadioButton
+            android:id="@+id/mMenuZouShou"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:visibility="gone"
+            android:drawableTop="@drawable/btn_read_style"
+            android:gravity="center"
+            android:text="走收"
+            android:textColor="@drawable/btn_read_style"
+            android:textSize="@dimen/textSizeSmall" />
+
+        <RadioButton
+            android:id="@+id/mMenuQueryRb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_query_style"
+            android:gravity="center"
+            android:text="@string/query"
+            android:textColor="@drawable/btn_query_style"
+            android:textSize="@dimen/textSizeSmall" />
+
+        <RadioButton
+            android:id="@+id/mMenuMineRb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_mine_style"
+            android:gravity="center"
+            android:text="@string/mine"
+            android:textColor="@drawable/btn_mine_style"
+            android:textSize="@dimen/textSizeSmall" />
+    </RadioGroup>
+</LinearLayout>
